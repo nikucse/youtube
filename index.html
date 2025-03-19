@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube-style video listing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-700 p-6">
+    <div class="max-w-7xl mx-auto p-6">
+      <div class="mb-6">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search Videos.."
+          oninput="searchVideos()"
+          class="w-full p-3 rounded-lg border-gray-300 focus:outline-none focus:border-blue-500"
+        />
+      </div>
+    </div>
+
+    <div id="videoList" class="grid grid-cols-3 gap-4"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
